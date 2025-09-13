@@ -1,3 +1,15 @@
+@mixin laptops {
+    @media screen and (max-width: 76rem) { @content };
+}
+
+@mixin tabletas {
+    @media screen and (max-width: 60rem) { @content };
+}
+
+@mixin telefonos {
+    @media screen and (max-width: 48rem) { @content };
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 5px;
@@ -10,43 +22,81 @@ header {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    
-}
 
-.head__btn {
-    width: 35px;
-    gap: 10px;
+    .head__title {
+        width: auto;
+        padding: 5px 5px;
 
-    button {
-        border-radius: 20px;
-        color: rgb(252, 252, 252)
+        img {
+            width: 40px;
+            cursor: pointer;
+        }
+
+        h3 {
+            margin: 20px;
+            color: rgb(0, 255, 255);
+            display: inline;
+        }
     }
-}
 
-.head__title {
-    width: auto;
-    padding: 5px 5px;
+    .head__container {
 
-    img {
-        width: 20px;
-        cursor: pointer;
+        @include telefonos() {
+            display: none;
+        }
+
+        @include tabletas() {
+            display: none;
+        }
+    }
+
+    .head__btn {
         display: flex;
-        text-align: center;
-    }
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 0 0 5px;
+        gap: 10px;
 
-    p {
-        color: rgb(0, 255, 255);
-        display: flex;
+        button {
+            background-color: #333;
+            margin: 3px; 
+            padding: 5px 10px;
+            color: #fff;
+            border-radius: 25px;
+            width: 25px 40px;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
     }
 }
 
-
-main {
+.products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center; 
+    text-align: center;
     background-color: rgb(164, 253, 224);
     gap: 15px;
     margin: 10px;
+
+    .card {
+        background-color: cadetblue;
+    }
+
+    @include laptops() {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include telefonos() {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include tabletas() {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 footer {

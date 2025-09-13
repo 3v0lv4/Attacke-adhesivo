@@ -9,213 +9,287 @@
 </head>
 <body>
     <header>
-            <article class="head__btn">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary">Nosotros</button>
-                    <button type="button" class="btn btn-primary">Contacto</button>
-                    <button type="button" class="btn btn-primary">Historia</button>
+
+        <article class="head__title">
+            <img src="img/logo-adhesive.jpg" alt="icon">
+            <h3>Ataque Adhesivo</h3>
+        </article>
+
+        <article class="head__container">
+                <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">buscar</button>
+                    </form>
                 </div>
-            </article>
+            </nav>
+        </article>
+        
+        <article class="head__btn">
+            <button>Registrarse</button>
+            <button>Iniciar sesion</button>
+        </article>
 
-            <article class="head__title">
-                <img src="img/playera-icono.png" alt="icon">
-                <p>Ataque adhesivo</p>
-            </article>
-
-            <article class="head__container">
-                 <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                        <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">buscar</button>
-                        </form>
-                    </div>
-                </nav>
-            </article>   
     </header>
 
     <main>
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-blanca.jpg" class="card-img-top" alt="playera-blanca">
-            <div class="card-body">
-                <h5 class="card-title">Playera blanca</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+        <section class="products">
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-blanca.jpg" class="card-img-top" alt="playera-blanca">
+                <div class="card-body">
+                    <h5 class="card-title">Playera blanca</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cuello redondo</li>
+                        <li class="list-group-item">1-10 pz $100.00</li>
+                        <li class="list-group-item">11-100 pz $75.00</li>
+                    </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-negra.jpg" class="card-img-top" alt="playera-negra">
-            <div class="card-body">
-                <h5 class="card-title">Playera negra</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-negra.jpg" class="card-img-top" alt="playera-negra">
+                <div class="card-body">
+                    <h5 class="card-title">Playera negra</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-gris.jpg" class="card-img-top" alt="playera-gris">
-            <div class="card-body">
-                <h5 class="card-title">Playera gris</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-gris.jpg" class="card-img-top" alt="playera-gris">
+                <div class="card-body">
+                    <h5 class="card-title">Playera gris</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-verde.jpg" class="card-img-top" alt="playera-verde">
-            <div class="card-body">
-                <h5 class="card-title">Playera verde</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-verde.jpg" class="card-img-top" alt="playera-verde">
+                <div class="card-body">
+                    <h5 class="card-title">Playera verde</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-azul-rey.jpg" class="card-img-top" alt="playera-azul-rey">
-            <div class="card-body">
-                <h5 class="card-title">Playera azul rey</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-azul-rey.jpg" class="card-img-top" alt="playera-azul-rey">
+                <div class="card-body">
+                    <h5 class="card-title">Playera azul rey</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-azul.jpg" class="card-img-top" alt="playera-azul">
-            <div class="card-body">
-                <h5 class="card-title">Playera azul</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-azul.jpg" class="card-img-top" alt="playera-azul">
+                <div class="card-body">
+                    <h5 class="card-title">Playera azul</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-lila.jpg" class="card-img-top" alt="playera-lila">
-            <div class="card-body">
-                <h5 class="card-title">Playera lila</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-lila.jpg" class="card-img-top" alt="playera-lila">
+                <div class="card-body">
+                    <h5 class="card-title">Playera lila</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-mostaza.jpg" class="card-img-top" alt="playera-mostaza">
-            <div class="card-body">
-                <h5 class="card-title">Playera mostaza</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-mostaza.jpg" class="card-img-top" alt="playera-mostaza">
+                <div class="card-body">
+                    <h5 class="card-title">Playera mostaza</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-pistache.jpg" class="card-img-top" alt="playera-pistache">
-            <div class="card-body">
-                <h5 class="card-title">Playera pistache</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-pistache.jpg" class="card-img-top" alt="playera-pistache">
+                <div class="card-body">
+                    <h5 class="card-title">Playera pistache</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-vino.jpg" class="card-img-top" alt="playera-rosa">
-            <div class="card-body">
-                <h5 class="card-title">Playera rosa</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/Playera-rosa.jpg" class="card-img-top" alt="playera-rosa">
+                <div class="card-body">
+                    <h5 class="card-title">Playera rosa</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-salmon.jpg" class="card-img-top" alt="playera-salmon">
-            <div class="card-body">
-                <h5 class="card-title">Playera salmon</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-salmon.jpg" class="card-img-top" alt="playera-salmon">
+                <div class="card-body">
+                    <h5 class="card-title">Playera salmon</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-verde-militar.jpg" class="card-img-top" alt="playera-verde-militar">
-            <div class="card-body">
-                <h5 class="card-title">Playera verde militar</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-verde-militar.jpg" class="card-img-top" alt="playera-verde-militar">
+                <div class="card-body">
+                    <h5 class="card-title">Playera verde militar</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-vino.jpg" class="card-img-top" alt="playera-vino">
-            <div class="card-body">
-                <h5 class="card-title">Playera vino</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-vino.jpg" class="card-img-top" alt="playera-vino">
+                <div class="card-body">
+                    <h5 class="card-title">Playera vino</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="img/playera-beige.jpg" class="card-img-top" alt="playera-beige">
-            <div class="card-body">
-                <h5 class="card-title">Playera beige</h5>
-                <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+            <div class="card" style="width: 18rem;">
+                <img src="img/playera-beige.jpg" class="card-img-top" alt="playera-beige">
+                <div class="card-body">
+                    <h5 class="card-title">Playera beige</h5>
+                    <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">detalles avanzados</button>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cuello redondo</li>
+                    <li class="list-group-item">1-10 pz $100.00</li>
+                    <li class="list-group-item">11-100 pz $75.00</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Comprar</a> 
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cuello redondo</li>
-                <li class="list-group-item">1-10 pz $100.00</li>
-                <li class="list-group-item">11-100 pz $75.00</li>
-            </ul>
-        </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ataque adhesivo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="card-text">Playera de alta calidad, <br>Playera confeccionada con alta costura <br>- Cuello reforzado <br>- Etiqueta de talla <br>- Etiqueta de método de lavado <br>- Costuras reforzadas</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     
