@@ -1,0 +1,53 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(100, 100, 100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.head__btn {
+  width: 35px;
+  gap: 10px;
+}
+.head__btn button {
+  border-radius: 20px;
+  color: rgb(252, 252, 252);
+}
+
+.head__title {
+  width: auto;
+  padding: 5px 5px;
+}
+.head__title img {
+  width: 20px;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+}
+.head__title p {
+  color: rgb(0, 255, 255);
+  display: flex;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(164, 253, 224);
+  gap: 15px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
